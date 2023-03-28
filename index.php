@@ -50,7 +50,7 @@ $db = new PDO('mysql:host=localhost;dbname=u47755', $user, $pass,
 
 // Подготовленный запрос. Не именованные метки.
 try {
-  $stmt = $db->prepare("INSERT INTO bentex SET name = ?");
+  $stmt = $db->prepare("INSERT INTO armo SET name = ?");
   $stmt->execute([$_POST['fio']]);
 }
 catch(PDOException $e){
