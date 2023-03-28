@@ -5,7 +5,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 // В суперглобальном массиве $_SERVER PHP сохраняет некторые заголовки запроса HTTP
 // и другие сведения о клиненте и сервере, например метод текущего запроса $_SERVER['REQUEST_METHOD'].
-if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   // В суперглобальном массиве $_GET PHP хранит все параметры, переданные в текущем запросе через URL.
   if (!empty($_GET['save'])) {
     // Если есть параметр save, то выводим сообщение пользователю.
@@ -49,7 +49,7 @@ $db = new PDO('mysql:host=localhost;dbname=u47755', $user, $pass,
 
 // Подготовленный запрос. Не именованные метки.
 try {
-  $stmt = $db->prepare("INSERT INTO armo SET name = ?");
+  $stmt = $db->prepare("INSERT INTO bentex SET name = ?");
   $stmt->execute([$_POST['fio']]);
 }
 catch(PDOException $e){
