@@ -1,4 +1,4 @@
-<form action="index.php" method="POST">
+<form action="/index.php" method="POST">
   <input name="fio" />
   <select name="year">
   <?php 
