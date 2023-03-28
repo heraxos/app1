@@ -1,3 +1,3 @@
-CREATE DATABASE bentex (
+CREATE DATABASE armo (
     name varchar(10)
 );
