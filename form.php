@@ -1,34 +1,4 @@
-<form action="index.php" method="POST">
-  <input name="fio" />
-  <select name="year">
-  <?php 
-    for ($i = 1922; $i <= 2022; $i++) {
-      printf('<option value="%d">%d год</option>', $i, $i);
-    }
-    ?>
-  </select>
-  
-  <input type="submit" value="ok" />
-</form>
-
-
-
-
-
-
-
-<!-- <html lang="en"> 
-<head>
-  <meta charset='utf-8'/>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'/>
-</head>
-<body>
-<div class="form-wrapper">
-<div class="form-layer">
-<h1 class ="titles" id="linktitle"> Form </h1>
-  <form action ="backend/" method = "POST">
+<form action ="" method = "POST">
 	<label>
 			Name:<br />
 			<input name="field-name-1" />
@@ -79,12 +49,7 @@
 	  <textarea name = "bio-field"> </textarea>
 	</label> <br/>
 	<label>
-	  <input type = "checkbox" name = "checkbox"> I agree with the contract </label> <br/>
+	  <input type = "checkbox" name = "checkbox" /> </label> <br/>
 	  Send: <br/>
 	  <input type="submit" value="Sending" />
   </form>
-</div>
-</div>
-</body>
-</html>
-
